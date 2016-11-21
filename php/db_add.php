@@ -5,10 +5,12 @@
  * Date: 21.06.16
  * Time: 10:09
  */
+ 
+/* set db data */
 $hostname = 'localhost';
-$username = 'patrick';
-$password = 'foobar123';
-$dbName = 'patrick_bookshelf';
+$username = '';
+$password = '';
+$dbName = '';
 
 $data = $_POST['jsonData'];
 $book = json_decode($data, true);
