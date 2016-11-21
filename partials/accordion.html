@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse_i">data[indexArray[i]].title</a>
+        </h4>
+    </div>
+    <!-- Collapsible Content -->
+    <div id="collapse_i" class="panel-collapse collapse">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <p class="list-group-item-text">'Author: ' + data[indexArray[i]].author</p>
+            </li>
+            <li class="list-group-item">
+                <p class="list-group-item-text">'ISBN: ' + data[indexArray[i]].ISBN </p>
+            </li>
+        </ul>
+        <div class="panel-footer">
+            <a class="getInfo" id="item_' + indexArray[i] + '" href="detail.html">more Information...</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Patrick Jominet">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Book Repository</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<div class="container">
+
+    <header class="header page-header clearfix">
+        <h3>Add books to the repository</h3>
+    </header>
+
+    <main class="container-fluid">
+
+        <div class="col-sm-offset-1 col-sm-9">
+            <form>
+                <div class="form-group row">
+                    <label for="inputTitle" class="col-sm-2 form-control-label">Title</label>
+                    <div class="col-sm-10" id="validateTitle">
+                        <input type="text" class="form-control" id="inputTitle" placeholder="some title">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputAuthor" class="col-sm-2 form-control-label">Author</label>
+                    <div class="col-sm-10" id="validateAuthor">
+                        <input type="text" class="form-control" id="inputAuthor" placeholder="some name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputISBN" class="col-sm-2 form-control-label">ISBN</label>
+                    <div class="col-sm-10" id="validateISBN">
+                        <input type="text" class="form-control" id="inputISBN" placeholder="123-4-56789-123-4" maxlength="17">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPages" class="col-sm-2 form-control-label">Pages</label>
+                    <div class="col-sm-10" id="validatePages">
+                        <input type="number" class="form-control" id="inputPages" placeholder="number of pages" maxlength="4">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputAbstract" class="col-sm-2 form-control-label">Abstract</label>
+                    <div class="col-sm-10" id="validateAbstract">
+                        <textarea class="form-control col-sm-10" id="inputAbstract" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary" id="submitBook" disabled>Submit Book</button>
+                        <button type="reset" class="btn btn-primary" id="resetForm" disabled>Reset Form</button>
+                    </div>
+                </div>
+            </form>
+            <div id="operationMessage"></div>
+        </div>
+
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+        <p>
+            Created with <span class="glyphicon glyphicon-heart"></span> by Patrick Jominet
+            <br>
+            <a class="btn  btn-link" href="about.html">About this Page</a>|
+            <a class="btn  btn-link" href="index.html">Back Home</a>
+        </p>
+    </footer>
+
+</div>
+
+<script type="text/javascript" src="js/jqueryBootstrap/minified/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/jqueryBootstrap/minified/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/jqueryBootstrap/minified/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/addBookHandler.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Patrick Jominet">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Book Repository</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<div class="container">
+
+    <header class="header page-header clearfix">
+        <h2>Details</h2>
+    </header>
+
+    <main class="container-fluid">
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading"><h3 id="title"></h3></div>
+
+            <div class="panel-body">
+                <ol class="list-group">
+                    <li class="list-group-item" style="border: none">
+                        <h4 class="list-group-item-heading">Author:</h4>
+                        <p class="list-group-item-text" id="author"></p>
+                    </li>
+                    <li class="list-group-item" style="border: none">
+                        <h4 class="list-group-item-heading">Abstract:</h4>
+                        <p class="list-group-item-text" id="abstract"></p>
+                    </li>
+                    <li class="list-group-item" style="border: none">
+                        <h4 class="list-group-item-heading">Pages:</h4>
+                        <p class="list-group-item-text" id="pages"></p>
+                    </li>
+                    <li class="list-group-item" style="border: none">
+                        <h4 class="list-group-item-heading">ISBN:</h4>
+                        <p class="list-group-item-text" id="isbn"></p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="panel-footer">
+                <a class="btn btn-primary" href="index.html" id="backHome">Back to Search</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+        <p>
+            Created with <span class="glyphicon glyphicon-heart"></span> by Patrick Jominet
+            <br>
+            <a class="btn  btn-link" href="about.html">About this Page</a>
+        </p>
+    </footer>
+
+</div>
+
+<script type="text/javascript" src="js/jqueryBootstrap/minified/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/jqueryBootstrap/minified/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/jqueryBootstrap/minified/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/storageReader.js"></script>
+
+</body>
+</html>
