@@ -104,8 +104,8 @@ $(document).ready(function () {
             };
             var message = $('#operationMessage');
 
-            //$.post("php/writeToJson.php", {jsonData: JSON.stringify(newBook)}, function (response) {
-            $.post("php/db_add.php", {jsonData: JSON.stringify(newBook)}, function (response) {
+            $.post("php/writeToJson.php", {jsonData: JSON.stringify(newBook)}, function (response) {
+            //$.post("php/db_add.php", {jsonData: JSON.stringify(newBook)}, function (response) {
                 //console.log(response);
                 if (response == true) {
                     message.replaceWith(
